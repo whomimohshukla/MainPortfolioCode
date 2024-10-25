@@ -279,3 +279,26 @@ html {
 }
 
 
+.skills-carousel .slick-slide > div {
+  margin: 0 13px; /* Ensures space between individual cards */
+}
+/* 
+.skill-card {
+  
+  height: 400px; 
+  width: 50px; 
+  background-color: #1E293B;
+  border-radius: 30px;
+} */
+
+
+.skill-card {
+  background-color: #1E293B; /* Dark background for contrast */
+  height: 450px; /* Card height */
+  width: 80px; /* Decrease width here */
+  padding: 20px; /* Optional: Add padding for more space inside the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

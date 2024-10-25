@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 // import Skills from "./components/Skills";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<Skills />} />
           {/* <Route path="/about" element={<About />} />
           
         <Route path="/contact" element={< <Skills></Skills> />} /> */}
