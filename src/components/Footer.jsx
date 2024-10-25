@@ -110,7 +110,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </a>
-
+            //twitter
             <a
               href="https://x.com/whomimohshukla"
               target="_blank"
@@ -132,7 +132,6 @@ function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </a>
-
             <a
               href="https://github.com/Mimohshukla00"
               target="_blank"
