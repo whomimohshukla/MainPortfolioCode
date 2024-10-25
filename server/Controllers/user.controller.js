@@ -11,7 +11,7 @@ exports.messageController = async (req, res) => {
     });
     if (existingUser) {
       // Handle the case where the user already exists (e.g., send an error response)
-      return res.status(400).json({ message: "Email already exists" });
+      return res.status(409).json({ message: "Email already exists" });
     } else {
       // Proceed with the insertion if no duplicate found
 

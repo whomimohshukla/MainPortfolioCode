@@ -32,8 +32,21 @@ export default function Contact() {
         messageContent: "",
       });
     } catch (error) {
-      console.error("Error sending message:", error);
-      setResponseMessage("Failed to send message. Please try again.");
+      if (error.response) {
+        // Custom messages based on status code
+        if (error.response.status === 409) {
+          setResponseMessage(
+            "Email already exists. Please use a different email."
+          );
+        } else if (error.response.status === 400) {
+          setResponseMessage("All fields are required.");
+        } else {
+          setResponseMessage("Failed to send message. Please try again.");
+        }
+      } else {
+        console.error("Error sending message:", error);
+        setResponseMessage("An unexpected error occurred. Please try again.");
+      }
     }
   };
   return (
