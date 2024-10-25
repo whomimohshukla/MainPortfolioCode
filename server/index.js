@@ -10,9 +10,14 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Update this to match your frontend's URL
+    origin: "https://whomimohshukla001.vercel.app", // Update this to match your frontend's URL
   })
 );
+
+// res.cookie("cookieName", "cookieValue", {
+//   sameSite: "None",
+//   secure: true, // Vercel automatically provides HTTPS
+// });
 
 // Mock API endpoints
 
