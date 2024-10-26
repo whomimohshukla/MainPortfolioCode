@@ -245,7 +245,6 @@ details > summary::-webkit-details-marker {
   @apply text-2xl font-bold text-richblack-5 lg:text-4xl;
 }
 
-
 Global styles for the scrollbar
 /* Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -278,9 +277,9 @@ html {
   scrollbar-color: #da2d2d #120101; /* Handle and track color for all browsers */
 }
 
-
 .skills-carousel .slick-slide > div {
-  margin: 0 13px; /* Ensures space between individual cards */
+  margin: 0 13px;
+  position: relative; /* Ensures space between individual cards */
 }
 /* 
 .skill-card {
@@ -291,9 +290,8 @@ html {
   border-radius: 30px;
 } */
 
-
 .skill-card {
-  background-color: #1E293B; /* Dark background for contrast */
+  background-color: #1e293b; /* Dark background for contrast */
   height: 450px; /* Card height */
   width: 80px; /* Decrease width here */
   padding: 20px; /* Optional: Add padding for more space inside the card */
@@ -302,3 +300,26 @@ html {
   align-items: center;
 }
 
+.button-container {
+  position: absolute; /* Position container absolutely */
+  top: 10px; /* Distance from the top */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 10; /* Ensure buttons are on top */
+}
+
+.custom-button {
+  background-color: #1e293b; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Round shape */
+  padding: 10px; /* Spacing inside the button */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.custom-button:hover {
+  background-color: #4a5568; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}

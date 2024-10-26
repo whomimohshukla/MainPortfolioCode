@@ -67,7 +67,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mb-0">
+          <hr className="my-6 w-full border-white border-t-richblack-500 sm:mx-auto lg:my-8" />
+        </div>
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-white sm:text-center">
             © 2024-
@@ -110,7 +112,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </a>
-            //twitter
+
             <a
               href="https://x.com/whomimohshukla"
               target="_blank"

@@ -8,6 +8,7 @@ import nodeJs from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/nodejs3.
 import mogngodb from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/mongodb-removebg-preview.png";
 import expressJs from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/ExpressJS-Library-removebg-preview.png";
 import gitAndGithub from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/git-and-github-removebg-preview.png";
+import tailwind from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/1715021638881-removebg-preview.png"
 const skillsData = [
   {
     id: 1,
@@ -20,36 +21,36 @@ const skillsData = [
     id: 2,
     name: "CSS",
     icon: css,
-    description: "Styling language for web pages",
+    description: "Proficient in creating responsive, visually engaging web designs with CSS3",
   },
   {
     id: 3,
     name: "JavaScript",
     icon: js,
-    description: "Programming language for web",
+    description: "Skilled in JavaScript for creating dynamic and interactive web experiences.",
   },
   {
     id: 4,
     name: "React",
     icon: reactlogo,
-    description: "Library for building UIs",
+    description: "Proficient in building scalable user interfaces with React.js.",
   },
   {
     id: 5,
     name: "Node.js",
     icon: nodeJs,
-    description: "JavaScript runtime for server",
+    description: "Skilled in developing server-side applications and APIs using Node.js.",
   },
-  { id: 6, name: "MongoDB", icon: mogngodb, description: "NoSQL database" },
+  { id: 6, name: "MongoDB", icon: mogngodb, description: "Proficient in designing and managing NoSQL databases with MongoDB." },
   {
     id: 7,
     name: "Express.js",
     icon: expressJs,
-    description: "Backend framework for Node.js",
+    description: "Skilled in building RESTful APIs and web applications using Express.js.",
   },
-  { id: 8, name: "Git & Github", icon: gitAndGithub, description: "Version control system" },
-  { id: 9, name: "Tailwind CSS", icon: gitAndGithub, description: "Version control system" },
-  { id: 10, name: "TypeScript", icon: gitAndGithub, description: "Version control system" },
+  { id: 8, name: "Git & Github", icon: gitAndGithub, description: "Experienced in using Git and GitHub for version control and collaborative development, ensuring streamlined workflows and enhanced productivity" },
+  { id: 9, name: "Tailwind CSS", icon: tailwind, description: "Proficient in Tailwind CSS for building responsive and customizable UI designs with utility-first styling" },
+  // { id: 10, name: "TypeScript", icon: gitAndGithub, description: "Version control system" },
 ];
 
 export default skillsData;

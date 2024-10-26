@@ -13,6 +13,8 @@ function Skills() {
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
+    nextArrow: <div className="slick-next custom-button">Next</div>,
+    prevArrow: <div className="slick-prev custom-button">Prev</div>,
     responsive: [
       {
         breakpoint: 1024,
@@ -42,7 +44,7 @@ function Skills() {
   };
 
   return (
-    <div className="skills-carousel mt-20 ml-2 ">
+    <div className="skills-carousel  mt-20 ml-2 ">
       <Slider {...settings}>
         {skillsData.map((skill) => (
           <div
@@ -54,7 +56,9 @@ function Skills() {
               alt={`${skill.name} icon`}
               className="h-32 w-34 mb-6  mt-7"
             />
-            <h3 className="mt-2 text-4xl font-bold text-richblue-5 ">{skill.name}</h3>
+            <h3 className="mt-2 text-4xl font-bold text-richblue-5 ">
+              {skill.name}
+            </h3>
             <p className=" text-xl mt-6 text-gray-400">{skill.description}</p>
           </div>
         ))}

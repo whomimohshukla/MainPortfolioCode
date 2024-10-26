@@ -126,6 +126,7 @@ export default {
       orange: "#E95438",
       pink: "#EE66A6",
       blueSky: "#39BAF0",
+      skills:"#091020"
     },
     extend: {
       maxWidth: {

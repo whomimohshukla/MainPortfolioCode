@@ -65,11 +65,9 @@ function Home() {
             backgroundGradient={<div className="codeblock2 absolute "></div>}
           />
         </div>
-
         <span className=" text-blueSky mt-24 text-5xl font-semibold block">
           <TypeWrite2></TypeWrite2>
         </span>
-
         <Skills></Skills>
       </section>
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mb-0">
