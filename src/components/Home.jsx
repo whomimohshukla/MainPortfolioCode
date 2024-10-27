@@ -4,6 +4,14 @@ import Highlight from "../compoUtls/Highlight";
 import Typewriter from "../compoUtls/Typewriter";
 import Skills from "./Skills";
 import TypeWrite2 from "../compoUtls/TypeWrite2";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si"; // Importing additional icons
 
 function Home() {
   return (
@@ -57,19 +65,75 @@ function Home() {
             }}
             ctabtn2={{
               btnText: "See Resume",
-              link: "/resume", // You can replace this with the correct link
-              active: false, // Activate the button
+              link: "/resume",
+              active: false,
             }}
             codeColor={"text-pink"}
             codeblock={`<!DOCTYPE html>\n<html lang="en">\n<head>\n<title>whomimohshukla</title>\n</head>\n<body>\n<h1><a href="/">Header</a></h1>\n<nav><a href="/one">One</a> <a href="/two">Two</a> <a href="/three">Three</a></nav>\n</body>`}
             backgroundGradient={<div className="codeblock2 absolute "></div>}
           />
         </div>
-        <span className=" text-blueSky mt-24 text-5xl font-semibold block">
+
+        {/* Contact Icons */}
+        <div className="mt-0">
+          <ul>
+            <li className="flex flex-row space-x-8 mt-4 lg:mt-0">
+              <a
+                href="https://github.com/Mimohshukla00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-500"
+              >
+                <FaGithub size={30} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mimohshukla00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-500"
+              >
+                <FaLinkedin size={30} />
+              </a>
+              <a
+                href="https://leetcode.com/whomimohshukla"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-500"
+              >
+                <SiLeetcode size={30} />
+              </a>
+              <a
+                href="https://twitter.com/@whomimohshukla"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-500"
+              >
+                <FaTwitter size={30} />
+              </a>
+              <a
+                href="https://instagram.com/whomimohshukla"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-500"
+              >
+                <FaInstagram size={30} />
+              </a>
+              <a
+                href="mailto:mimohshukla0001@gmail.com"
+                className="text-white hover:text-yellow-500"
+              >
+                <FaEnvelope size={30} />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <span className="text-blueSky mt-24 text-5xl font-semibold block">
           <TypeWrite2></TypeWrite2>
         </span>
         <Skills></Skills>
       </section>
+
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mb-0">
         <hr className="my-6 w-full border-white border-t-richblack-500 sm:mx-auto lg:my-8" />
       </div>
