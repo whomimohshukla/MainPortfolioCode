@@ -289,6 +289,11 @@ html {
   background-color: #1E293B;
   border-radius: 30px;
 } */
+.navbar {
+  position: sticky;
+  top: 0; /* Adjust as needed */
+  z-index: 10; /* Ensures it's on top of other elements */
+}
 
 .skill-card {
   background-color: #1e293b; /* Dark background for contrast */
