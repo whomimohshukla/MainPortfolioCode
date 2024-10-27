@@ -5,22 +5,31 @@ function SkillsSection() {
   const skills = [
     "HTML",
     "CSS",
+    "next UI",
     "JavaScript",
     "React",
     "Node.js",
+    "vite",
+    "MongoDB",
     "Express.js",
     "MongoDB",
     "Redux",
+    "VS Code",
     "Git",
     "GitHub",
-    "Webpack",
+    "Operating system",
+    "Vercel",
+    "Netlify",
+    "c++",
+    "Ubantu",
+    "Postman",
+
     "Tailwind CSS",
-    "Bootstrap",
+
     "Material UI",
     "REST API",
-    "GraphQL",
+
     "Socket.io",
-    "Firebase",
   ];
   return (
     <>
@@ -32,7 +41,7 @@ function SkillsSection() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex justify-center h-20 items-center p-3 bg-skills text-white rounded-lg font-semibold hover:bg-mimoh transform transition-transform duration-200 cursor-pointer"
+            className="flex justify-center font-extralight h-20 items-center p-3 bg-skills text-mimoh rounded-lg text-2xl hover:bg-opacity-60 border-transparent hover:border-yellow-500 border-2  transform transition-transform duration-200 cursor-pointer"
           >
             {skill}
           </div>
