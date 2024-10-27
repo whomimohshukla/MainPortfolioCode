@@ -8,7 +8,7 @@ const TypeWrite2 = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "--Skills"
+        "Skills-"
       ],
       loop: true,
       typeSpeed: 120,
