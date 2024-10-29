@@ -10,6 +10,8 @@ import expressJs from '../assets/ExpressJS-Library-removebg-preview.png';
 import gitAndGithub from '../assets/git-and-github-removebg-preview.png';
 import tailwind from '../assets/1715021638881-removebg-preview.png';
 
+
+// skills data 
 const skillsData = [
   {
     id: 1,
