@@ -12,6 +12,8 @@ import tailwind from '../assets/1715021638881-removebg-preview.png';
 
 
 // skills data 
+
+//mimohshukla
 const skillsData = [
   {
     id: 1,
