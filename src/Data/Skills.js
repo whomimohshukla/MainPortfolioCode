@@ -12,8 +12,9 @@ import tailwind from '../assets/1715021638881-removebg-preview.png';
 
 
 // skills data 
+// >>> data set 
 
-//mimohshukla
+// whomimohshukla 
 const skillsData = [
   {
     id: 1,
