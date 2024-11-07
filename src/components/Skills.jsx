@@ -10,7 +10,7 @@ function Skills() {
   const sliderRef = useRef(null);
 
   const settings = {
-    arrows: false, // This removes the default Prev/Next arrows
+    arrows: false, 
     dots: true,
     infinite: false,
     speed: 400,
