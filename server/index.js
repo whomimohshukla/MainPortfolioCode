@@ -33,6 +33,8 @@ app.use(
 
 // Routes and middleware
 app.use(express.json());
+
+// route to send a message
 app.post("/api/v1/message", (req, res) => {
   res.send({ message: "Message received" });
 });
