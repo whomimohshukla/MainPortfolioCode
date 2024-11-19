@@ -1,32 +1,34 @@
-const User = require("../Models/user.model");
+const nodemailer = require("nodemailer");
+const mailSender = require("../Utls/mailsender");
 
 exports.messageController = async (req, res) => {
   try {
     const { name, email, messageTitle, messageContent } = req.body;
-    if (!messageTitle || !messageContent || !email || !name) {
-      return res.status(400).json({ message: "All fields are required" });
-    }
-    const existingUser = await User.findOne({
-      email,
-    });
-    if (existingUser) {
-      // Handle the case where the user already exists (e.g., send an error response)
-      return res.status(409).json({ message: "Email already exists" });
-    } else {
-      // Proceed with the insertion if no duplicate found
 
-      const newMessage = await User.create({
-        name,
-        email,
-        messageTitle,
-        messageContent,
-      });
-      res
-        .status(201)
-        .json({ message: "Message sent successfully", data: newMessage });
+    if (!name || !email || !messageTitle || !messageContent) {
+      return res.status(400).json({ message: "All fields are required." });
     }
+
+    const recipientEmail = process.env.RECIPIENT_EMAIL;
+    if (!recipientEmail) {
+      return res
+        .status(500)
+        .json({ message: "Recipient email not configured." });
+    }
+
+    const messageData = { name, email, messageTitle, messageContent };
+
+    await mailSender(
+      recipientEmail,
+      "New Message from Portfolio Contact Form",
+      messageData
+    );
+
+    res.status(201).json({ message: "Message sent successfully." });
   } catch (error) {
-    console.error("message while creating", error);
-    res.status(500).json({ message: "error while creating message " });
+    console.error("Error while processing message:", error);
+    res
+      .status(500)
+      .json({ message: "An error occurred while processing your request." });
   }
 };
