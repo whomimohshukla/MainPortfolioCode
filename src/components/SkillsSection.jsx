@@ -21,7 +21,7 @@ function SkillsSection() {
     "Vercel",
     "Netlify",
     "c++",
-    "Ubantu",
+    "Ubuntu",
     "Postman",
 
     "Tailwind CSS",
