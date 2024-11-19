@@ -19,7 +19,7 @@ export default function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/message",
+        "http://localhost:8000/api/v1/message",
         formData
       );
       console.log(response);
