@@ -9,7 +9,6 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-
 import mylogo from "../assets/myLogo-Photoroom-Photoroom.jpg";
 
 function NavBar() {
@@ -28,58 +27,58 @@ function NavBar() {
             />
           </Link>
           {/* Contact Icons */}
-        <div className="ml-28">
-          <ul>
-            <li className="flex flex-row space-x-11 mt-4 lg:mt-0">
-              <a
-                href="https://github.com/Mimohshukla00"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-500"
-              >
-                <FaGithub size={23} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mimohshukla00"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-500"
-              >
-                <FaLinkedin size={23} />
-              </a>
-              <a
-                href="https://leetcode.com/whomimohshukla"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-500"
-              >
-                <SiLeetcode size={23} />
-              </a>
-              <a
-                href="https://twitter.com/@whomimohshukla"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-500"
-              >
-                <FaTwitter size={23} />
-              </a>
-              <a
-                href="https://instagram.com/whomimohshukla"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-500"
-              >
-                <FaInstagram size={23} />
-              </a>
-              <a
-                href="mailto:mimohshukla0001@gmail.com"
-                className="text-white hover:text-yellow-500"
-              >
-                <FaEnvelope size={23} />
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div className="ml-28">
+            <ul>
+              <li className="flex flex-row space-x-11 mt-4 lg:mt-0">
+                <a
+                  href="https://github.com/Mimohshukla00"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-yellow-500"
+                >
+                  <FaGithub size={23} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mimohshukla00"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-yellow-500"
+                >
+                  <FaLinkedin size={23} />
+                </a>
+                <a
+                  href="https://leetcode.com/whomimohshukla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-yellow-500"
+                >
+                  <SiLeetcode size={23} />
+                </a>
+                <a
+                  href="https://twitter.com/@whomimohshukla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-yellow-500"
+                >
+                  <FaTwitter size={23} />
+                </a>
+                <a
+                  href="https://instagram.com/whomimohshukla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-yellow-500"
+                >
+                  <FaInstagram size={23} />
+                </a>
+                <a
+                  href="mailto:mimohshukla0001@gmail.com"
+                  className="text-white hover:text-yellow-500"
+                >
+                  <FaEnvelope size={23} />
+                </a>
+              </li>
+            </ul>
+          </div>
 
           {/* Hamburger Menu Button (visible on small screens) */}
           <button
