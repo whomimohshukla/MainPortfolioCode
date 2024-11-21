@@ -10,12 +10,14 @@ function Skills() {
   const sliderRef = useRef(null);
 
   const settings = {
-    arrows: false, 
+    arrows: false,
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 400,
     slidesToShow: 3,
     slidesToScroll: 2,
+    autoplay: true, // Enable auto-slide
+    autoplaySpeed: 1500, // Slide every 3 seconds
     initialSlide: 1,
     responsive: [
       {
