@@ -12,11 +12,12 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si"; // Importing additional icons
+import Projects from "./Projects";
 
 function Home() {
   return (
     <>
-      <section className="px-4 sm:px-8 md:px-16 lg:px-32 py-8 bg-gray-900">
+      <section className="px-4  sm:px-8 md:px-16 lg:px-32 py-8 bg-gray-900">
         {/* Code Section 1 */}
         <div className="relative flex flex-col md:flex-row justify-stretch gap-8 text-white">
           <CodeBlocks
@@ -133,6 +134,7 @@ function Home() {
         </span>
         <Skills></Skills>
       </section>
+      {/* <Projects className="px-4 mt-0 sm:px-8 md:px-16 lg:px-32 py-8 bg-gray-900"></Projects> */}
 
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mb-0">
         <hr className="my-6 w-full border-white border-t-richblack-500 sm:mx-auto lg:my-8" />
