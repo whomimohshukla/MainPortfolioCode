@@ -195,7 +195,7 @@ function Projects() {
               >
                 {project.name}
               </motion.h3>
-              <p className="text-yellow-500 mb-4 text-sm leading-relaxed">
+              <p className="text-white mb-4 text-sm leading-relaxed">
                 {project.description}
               </p>
 
