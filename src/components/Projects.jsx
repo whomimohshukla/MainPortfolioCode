@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import TypeWriter3 from "../compoUtls/TypeWriter3";
-import BookMybus1 from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/book1.png";
-import BookMybus2 from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/book2.png";
-import BookMybus3 from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/book3.png";
-import BookMybus4 from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/book4.png";
-import BookMybus5 from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/book5.png";
-import image2 from "/home/whomimohshukla/Desktop/portfolio-2/src/assets/portfolioImage.png";
+import BookMybus1 from "../assets/book1.png";
+import BookMybus2 from "../assets/book2.png";
+import BookMybus3 from "../assets/book3.png";
+import BookMybus4 from "../assets/book4.png";
+import BookMybus5 from "../assets/book5.png";
+import image2 from "../assets/portfolioImage.png";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTags } from "react-icons/fa";
 import Slider from "react-slick";
