@@ -15,20 +15,19 @@ import "slick-carousel/slick/slick-theme.css";
 const projectsData = [
   {
     id: 1,
-    name: "Real-Time Bus Tracker",
+    name: "Book My Ticket",
     description:
-      "A system for tracking buses in real-time with booking features.",
+      "A comprehensive bus ticket booking platform with real-time seat selection, secure payment integration, and instant ticket generation. Features include route search, seat availability, and booking management.",
     images: [
       BookMybus1,
       BookMybus2,
       BookMybus3,
       BookMybus4,
       BookMybus5,
-      // "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Bus+Tracker+2",
     ],
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-    github: "https://github.com/yourusername/bus-tracker",
-    demo: "https://bus-tracker-demo.com",
+    github: "https://github.com/yourusername/book-my-ticket",
+    demo: "https://book-my-ticket-demo.com",
   },
   {
     id: 2,
