@@ -20,10 +20,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import BookMybus1 from "../assets/book1.png";
-import BookMybus2 from "../assets/book2.png";
-import BookMybus3 from "../assets/book3.png";
-import image2 from "../assets/portfolioImage.png";
+// Import all images
+const projectImages = {
+  BookMybus1: new URL('../assets/book1.png', import.meta.url).href,
+  BookMybus2: new URL('../assets/book2.png', import.meta.url).href,
+  BookMybus3: new URL('../assets/book3.png', import.meta.url).href,
+  image2: new URL('../assets/portfolioImage.png', import.meta.url).href,
+};
 
 const featuredProjects = [
   {
@@ -31,7 +34,7 @@ const featuredProjects = [
     name: "Book My Ticket",
     description:
       "A comprehensive bus ticket booking platform with real-time seat selection, secure payment integration, and instant ticket generation. Features include route search, seat availability, and booking management.",
-    images: [BookMybus1, BookMybus2, BookMybus3],
+    images: [projectImages.BookMybus1, projectImages.BookMybus2, projectImages.BookMybus3],
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
     github: "https://github.com/yourusername/book-my-ticket",
     demo: "https://book-my-ticket-demo.com",
@@ -40,7 +43,7 @@ const featuredProjects = [
     id: 2,
     name: "Portfolio Website",
     description: "A personal portfolio to showcase skills and projects.",
-    images: [image2],
+    images: [projectImages.image2],
     tags: ["React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/yourusername/portfolio",
     demo: "https://portfolio-demo.com",

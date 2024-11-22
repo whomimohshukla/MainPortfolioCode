@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import TypeWriter3 from "../compoUtls/TypeWriter3";
-import BookMybus1 from "../assets/book1.png";
-import BookMybus2 from "../assets/book2.png";
-import BookMybus3 from "../assets/book3.png";
-import BookMybus4 from "../assets/book4.png";
-import BookMybus5 from "../assets/book5.png";
-import image2 from "../assets/portfolioImage.png";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTags } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// Import all images
+const projectImages = {
+  BookMybus1: new URL('../assets/book1.png', import.meta.url).href,
+  BookMybus2: new URL('../assets/book2.png', import.meta.url).href,
+  BookMybus3: new URL('../assets/book3.png', import.meta.url).href,
+  BookMybus4: new URL('../assets/book4.png', import.meta.url).href,
+  BookMybus5: new URL('../assets/book5.png', import.meta.url).href,
+  image2: new URL('../assets/portfolioImage.png', import.meta.url).href,
+};
 
 const projectsData = [
   {
@@ -19,11 +23,11 @@ const projectsData = [
     description:
       "A comprehensive bus ticket booking platform with real-time seat selection, secure payment integration, and instant ticket generation. Features include route search, seat availability, and booking management.",
     images: [
-      BookMybus1,
-      BookMybus2,
-      BookMybus3,
-      BookMybus4,
-      BookMybus5,
+      projectImages.BookMybus1,
+      projectImages.BookMybus2,
+      projectImages.BookMybus3,
+      projectImages.BookMybus4,
+      projectImages.BookMybus5,
     ],
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
     github: "https://github.com/yourusername/book-my-ticket",
@@ -34,7 +38,7 @@ const projectsData = [
     name: "Portfolio Website",
     description: "A personal portfolio to showcase skills and projects.",
     images: [
-      image2,
+      projectImages.image2,
       // "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Portfolio+1",
       // "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Portfolio+2",
     ],
