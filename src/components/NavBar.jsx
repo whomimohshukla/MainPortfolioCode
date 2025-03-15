@@ -34,7 +34,7 @@ function NavBar() {
           {/* Contact Icons */}
           <div className="hidden sm:flex space-x-6 lg:space-x-8 items-center">
             <a
-              href="https://github.com/Mimohshukla00"
+              href="https://github.com/whomimohshukla"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-yellow-500"
