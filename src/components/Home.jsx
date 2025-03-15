@@ -26,6 +26,18 @@ const projectImages = {
   BookMybus2: new URL('../assets/book2.png', import.meta.url).href,
   BookMybus3: new URL('../assets/book3.png', import.meta.url).href,
   image2: new URL('../assets/portfolioImage.png', import.meta.url).href,
+  skillbridge1: new URL('../assets/skillBridege1.png', import.meta.url).href,
+  skillbridge2: new URL('../assets/skillBridege2.png', import.meta.url).href,
+  skillbridge3: new URL('../assets/skillBridege3.png', import.meta.url).href,
+  skillbridge4: new URL('../assets/skillBridege4.png', import.meta.url).href,
+  skillbridge5: new URL('../assets/skillBridege5.png', import.meta.url).href,
+  skillbridge6: new URL('../assets/skillBridege6.png', import.meta.url).href,
+  skillbridge7: new URL('../assets/skillBridege7.png', import.meta.url).href,
+  skillbridge8: new URL('../assets/skillBridege8.png', import.meta.url).href,
+  skillbridge9: new URL('../assets/skillBridege9.png', import.meta.url).href,
+  skillbridge10: new URL('../assets/skillBridege10.png', import.meta.url).href,
+  // skillbridge11: new URL('../assets/skillBridege11.png', import.meta.url).href,
+  skillbridge12: new URL('../assets/skillBridege12.png', import.meta.url).href,
 };
 
 const featuredProjects = [
@@ -40,13 +52,15 @@ const featuredProjects = [
     demo: "https://book-my-ticket-demo.com",
   },
   {
-    id: 2,
-    name: "Portfolio Website",
-    description: "A personal portfolio to showcase skills and projects.",
-    images: [projectImages.image2],
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/yourusername/portfolio",
-    demo: "https://portfolio-demo.com",
+    id: 3,
+    name: "SkillBridge",
+    description: "A modern freelance marketplace connecting skilled professionals with quality projects. Features include user authentication, project management, real-time messaging, proposal system, and secure payment processing.",
+    images: [
+      projectImages.skillbridge1, projectImages.skillbridge2, projectImages.skillbridge3, projectImages.skillbridge4, projectImages.skillbridge5, projectImages.skillbridge6, projectImages.skillbridge7, projectImages.skillbridge8, projectImages.skillbridge9, projectImages.skillbridge10, projectImages.skillbridge12
+    ],
+    tags: ["React", "Node.js", "MongoDB", "TypeScript", "Express.js"],
+    github: "https://github.com/whomimohshukla/-Freelance-Marketplace--Project",
+    demo: "https://skillbridge-demo.vercel.app",
   },
 ];
 
@@ -180,7 +194,7 @@ function Home() {
           <ul>
             <li className="flex flex-row space-x-8 mt-4 lg:mt-0">
               <a
-                href="https://github.com/Mimohshukla00"
+                href="https://github.com/whomimohshukla"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-yellow-500"
@@ -338,7 +352,7 @@ function Home() {
           {/* View All Projects Button */}
           <div className="text-center mt-12">
             <motion.a
-              href="#projects"
+              href="/projects"
               className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-gray-900 rounded-full font-semibold hover:bg-yellow-400 transition-colors duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

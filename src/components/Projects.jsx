@@ -8,18 +8,30 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Import all images
 const projectImages = {
-  BookMybus1: new URL('../assets/book1.png', import.meta.url).href,
-  BookMybus2: new URL('../assets/book2.png', import.meta.url).href,
-  BookMybus3: new URL('../assets/book3.png', import.meta.url).href,
-  BookMybus4: new URL('../assets/book4.png', import.meta.url).href,
-  BookMybus5: new URL('../assets/book5.png', import.meta.url).href,
-  image2: new URL('../assets/portfolioImage.png', import.meta.url).href,
+  BookMybus1: new URL("../assets/book1.png", import.meta.url).href,
+  BookMybus2: new URL("../assets/book2.png", import.meta.url).href,
+  BookMybus3: new URL("../assets/book3.png", import.meta.url).href,
+  BookMybus4: new URL("../assets/book4.png", import.meta.url).href,
+  BookMybus5: new URL("../assets/book5.png", import.meta.url).href,
+  image2: new URL("../assets/portfolioImage.png", import.meta.url).href,
+  skillbridge1: new URL("../assets/skillBridege1.png", import.meta.url).href,
+  skillbridge2: new URL("../assets/skillBridege2.png", import.meta.url).href,
+  skillbridge3: new URL("../assets/skillBridege3.png", import.meta.url).href,
+  skillbridge4: new URL("../assets/skillBridege4.png", import.meta.url).href,
+  skillbridge5: new URL("../assets/skillBridege5.png", import.meta.url).href,
+  skillbridge6: new URL("../assets/skillBridege6.png", import.meta.url).href,
+  skillbridge7: new URL("../assets/skillBridege7.png", import.meta.url).href,
+  skillbridge8: new URL("../assets/skillBridege8.png", import.meta.url).href,
+  skillbridge9: new URL("../assets/skillBridege9.png", import.meta.url).href,
+  skillbridge10: new URL("../assets/skillBridege10.png", import.meta.url).href,
+  // skillbridge11: new URL('../assets/skillBridege11.png', import.meta.url).href,
+  skillbridge12: new URL("../assets/skillBridege12.png", import.meta.url).href,
 };
 
 const projectsData = [
   {
     id: 1,
-    name: "Book My Ticket",
+    name: "BookMyBus",
     description:
       "A comprehensive bus ticket booking platform with real-time seat selection, secure payment integration, and instant ticket generation. Features include route search, seat availability, and booking management.",
     images: [
@@ -30,8 +42,8 @@ const projectsData = [
       projectImages.BookMybus5,
     ],
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-    github: "https://github.com/yourusername/book-my-ticket",
-    demo: "https://book-my-ticket-demo.com",
+    github: "https://github.com/whomimohshukla/Book-My-Bus",
+    demo: "https://book-my-bus-nine.vercel.app/",
   },
   {
     id: 2,
@@ -48,16 +60,25 @@ const projectsData = [
   },
   {
     id: 3,
-    name: "E-commerce Platform",
-    description: "An online shopping platform with payment integration.",
+    name: "SkillBridge",
+    description:
+      "A modern freelance marketplace connecting skilled professionals with quality projects. Features include user authentication, project management, real-time messaging, proposal system, and secure payment processing.",
     images: [
-      // "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=E-commerce+Main",
-      // "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=E-commerce+1",
-      // "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=E-commerce+2",
+      projectImages.skillbridge1,
+      projectImages.skillbridge2,
+      projectImages.skillbridge3,
+      projectImages.skillbridge4,
+      projectImages.skillbridge5,
+      projectImages.skillbridge6,
+      projectImages.skillbridge7,
+      projectImages.skillbridge8,
+      projectImages.skillbridge9,
+      projectImages.skillbridge10,
+      projectImages.skillbridge12,
     ],
-    tags: ["Next.js", "Redux", "Stripe", "Firebase"],
-    github: "https://github.com/yourusername/ecommerce",
-    demo: "https://ecommerce-demo.com",
+    tags: ["React", "Node.js", "MongoDB", "TypeScript", "Express.js"],
+    github: "https://github.com/whomimohshukla/-Freelance-Marketplace--Project",
+    demo: "https://skillbridge-demo.vercel.app",
   },
 ];
 
