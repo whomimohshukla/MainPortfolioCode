@@ -81,7 +81,7 @@ function NavBar() {
             </a>
           </div>
 
-          {/* Hamburger Menu Button (visible on small screens) */}
+          
           <button
             className="text-white lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
